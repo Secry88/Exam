@@ -3,21 +3,21 @@ namespace Exam.Tests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void CorrectFrom16thTo10()
         {
             Perevod perevod = new Perevod();
-            int a = perevod.FromSixteenth("4E");
+            int a = perevod.FromSixteenth("A");
 
-            Assert.Equal(78, a);
+            Assert.Equal(10, a);
         }
 
         [Fact]
-        public void Test2()
+        public void CorrectFrom10thTo16th()
         {
             Perevod perevod = new Perevod();
-            string a = perevod.FromTen(78);
+            string a = perevod.FromTen(10);
 
-            Assert.Equal("4E", a);
+            Assert.Equal("A", a);
         }
     }
 } 
